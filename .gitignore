@@ -1,10 +1,30 @@
+﻿# Python virtual environment and caches
 .venv/
-*.pyc
 __pycache__/
+*.py[cod]
+
+# Local editor and environment settings
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# Training logs, checkpoints, weights, and local test outputs
 log/
-log_smoke/
+log_*/
 results/
-results_smoke/
+results_*/
+checkpoints/
+*.h5
+*.weights.h5
+*.keras
+*.ckpt
+*.ckpt.*
+*.pkl
+
+# Local dataset files (keep only the dataset documentation in Git)
 data/**
+!data/
 !data/unet_segmentations_binary/
 !data/unet_segmentations_binary/README_DATASET.md
