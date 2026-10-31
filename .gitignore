@@ -1,4 +1,10 @@
+.venv/
 *.pyc
-data/
+__pycache__/
 log/
+log_smoke/
 results/
+results_smoke/
+data/**
+!data/unet_segmentations_binary/
+!data/unet_segmentations_binary/README_DATASET.md
